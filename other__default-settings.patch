@@ -16,8 +16,9 @@ diff --color -U 5 -r -Z -B ./org/gtk/gtksettings.c ./mod/gtk/gtksettings.c
 @@ -59,11 +59,11 @@
  #include "deprecated/gtkrc.h"
  
+ 
  #ifdef GDK_WINDOWING_QUARTZ
- #define PRINT_PREVIEW_COMMAND "open -a /Applications/Preview.app %f"
+ #define PRINT_PREVIEW_COMMAND "open -b com.apple.Preview %f"
  #else
 -#define PRINT_PREVIEW_COMMAND "evince --unlink-tempfile --preview --print-settings %s %f"
 +#define PRINT_PREVIEW_COMMAND "atril --unlink-tempfile --preview --print-settings %s %f"

@@ -65,6 +65,7 @@ diff --color -U 5 -r -Z -B ./org/gtk/gtkfilechooserwidget.c ./mod/gtk/gtkfilecho
  
    priv->hidden_files_item = add_button (box, _("Show _Hidden Files"), "item.toggle-show-hidden");
    priv->size_column_item = add_button (box, _("Show _Size Column"), "item.toggle-show-size");
+   priv->type_column_item = add_button (box, _("Show T_ype Column"), "item.toggle-show-type");
    priv->show_time_item = add_button (box, _("Show _Time"), "item.toggle-show-time");
    priv->sort_directories_item = add_button (box, _("Sort _Folders before Files"), "item.toggle-sort-dirs-first");
 +  g_object_set (priv->visit_file_item,         "image", gtk_image_new_from_icon_name ("gtk-jump-to",    GTK_ICON_SIZE_MENU), NULL);
